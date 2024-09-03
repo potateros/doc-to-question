@@ -1,0 +1,26 @@
+.history {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.history h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history li {
+  cursor: pointer;
+  padding: 5px 0;
+  transition: background-color 0.2s;
+}
+
+.history li:hover {
+  background-color: #e0e0e0;
+}

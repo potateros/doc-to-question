@@ -1,0 +1,34 @@
+.question {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+
+.question.correct {
+  border-color: #28a745;
+  background-color: #d4edda;
+}
+
+.question.incorrect {
+  border-color: #dc3545;
+  background-color: #f8d7da;
+}
+
+.feedback {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.correct-text {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.incorrect-text {
+  color: #dc3545;
+  font-weight: bold;
+}
