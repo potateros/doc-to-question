@@ -1,0 +1,135 @@
+[
+  {
+    "id": "KH Employee Handbook V2.01_2024.pdf_1725353232876",
+    "questions": [
+      {
+        "type": "true-false",
+        "question": "Kydon Group has a drug-free workplace policy.",
+        "answer": true,
+        "explanation": "Kydon Group prohibits drug and alcohol use during work hours and on its premises, emphasizing the importance of a drug-free workplace.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "checklist",
+        "question": "Select the types of leave available to Kydon Group employees.",
+        "options": [
+          "Annual Leave",
+          "Medical Leave",
+          "Paternity Leave",
+          "Vacation Leave"
+        ],
+        "answer": [
+          "Annual Leave",
+          "Medical Leave",
+          "Paternity Leave"
+        ],
+        "explanation": "Kydon Group employees are entitled to Annual Leave, Medical Leave, and Paternity Leave. There is no mention of a formal Vacation Leave policy in the handbook.",
+        "userAnswer": [],
+        "isCorrect": null
+      },
+      {
+        "type": "multiple-choice",
+        "question": "How many days of compassionate leave does a full-time employee receive?",
+        "options": [
+          "1 day",
+          "3 days",
+          "5 days",
+          "7 days"
+        ],
+        "answer": "3 days",
+        "explanation": "Full-time employees are entitled to 3 consecutive working days of paid compassionate leave for immediate family deaths.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "true-false",
+        "question": "Employees are allowed to disclose confidential information after their employment ends.",
+        "answer": false,
+        "explanation": "Employees must not disclose confidential information during or after employment, maintaining the company's trust and security.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "checklist",
+        "question": "Which of the following are considered employee benefits at Kydon Group?",
+        "options": [
+          "KydonCare",
+          "Flexible Work Arrangement",
+          "Referral Bonus",
+          "Stock Options"
+        ],
+        "answer": [
+          "KydonCare",
+          "Flexible Work Arrangement",
+          "Referral Bonus"
+        ],
+        "explanation": "Kydon Group offers benefits such as KydonCare, flexible work arrangements, and a referral bonus program. Stock options are not mentioned as part of the benefits.",
+        "userAnswer": [],
+        "isCorrect": null
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What is the review frequency for performance appraisals at Kydon Group?",
+        "options": [
+          "Monthly",
+          "Quarterly",
+          "Annually",
+          "Bi-annually"
+        ],
+        "answer": "Annually",
+        "explanation": "Performance appraisals occur annually in January, providing a structured way to evaluate employee performance.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "true-false",
+        "question": "New employees at Kydon Group have an immediate confirmation of employment.",
+        "answer": false,
+        "explanation": "New employees must complete a 3-month probationary period before their employment is confirmed, during which leave entitlements do not apply.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "checklist",
+        "question": "Select the key values upheld by Kydon Group.",
+        "options": [
+          "Integrity",
+          "Innovation",
+          "Dishonesty",
+          "Sustainability"
+        ],
+        "answer": [
+          "Integrity",
+          "Innovation",
+          "Sustainability"
+        ],
+        "explanation": "Kydon Group's core values include Integrity, Innovation, and Sustainability, while 'Dishonesty' is not aligned with the company's values.",
+        "userAnswer": [],
+        "isCorrect": null
+      },
+      {
+        "type": "multiple-choice",
+        "question": "What happens if an employee abandons their job at Kydon Group?",
+        "options": [
+          "They receive a warning",
+          "They may be terminated without benefits",
+          "They can return to work",
+          "They receive a severance package"
+        ],
+        "answer": "They may be terminated without benefits",
+        "explanation": "Job abandonment may lead to termination without benefits, as outlined in the cessation of employment policy.",
+        "userAnswer": "",
+        "isCorrect": null
+      },
+      {
+        "type": "true-false",
+        "question": "Maternity leave includes 8 weeks of paid leave at Kydon Group.",
+        "answer": true,
+        "explanation": "Female employees with more than 3 months of service are eligible for 12 weeks of maternity leave, which includes 8 weeks of paid leave.",
+        "userAnswer": "",
+        "isCorrect": null
+      }
+    ]
+  }
+]
