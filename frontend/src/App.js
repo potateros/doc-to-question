@@ -4,6 +4,9 @@ import Question from './components/Question';
 import History from './components/History';
 import './App.css';
 
+// const BASE_URL = "http://localhost:4011";
+const BASE_URL = "https://quizlerer.potateros.xyz"
+
 const App = () => {
   const [file, setFile] = useState(null);
   const [questions, setQuestions] = useState([]);
@@ -48,7 +51,7 @@ const App = () => {
     formData.append('pdf', file);
 
     try {
-      const response = await axios.post('http://localhost:3001/upload', formData, {
+      const response = await axios.post(`${BASE_URL}/api/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

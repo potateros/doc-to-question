@@ -8,16 +8,28 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const upload = multer({ dest: 'uploads/' });
+
+const port = process.env.PORT || 4011;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
+
+const uploadsDir = path.join(__dirname, 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir);
+}
+
+// Configure multer with absolute path
+const upload = multer({
+  dest: uploadsDir
+});
+
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-app.use(cors({
-  origin: 'http://localhost:3000' // Allow requests from your frontend
-}));
-
+app.use(cors());
 app.use(express.json());
 
 const MAX_TOKENS = 4096; // Maximum tokens OpenAI API can handle, adjust as needed
@@ -38,8 +50,8 @@ const summarizeText = async (text) => {
 };
 
 // Route to upload PDF and generate questions
-app.post('/upload', upload.single('pdf'), async (req, res) => {
-  const pdfPath = path.join(__dirname, req.file.path);
+app.post('/api/upload', upload.single('pdf'), async (req, res) => {
+  const pdfPath = req.file.path;
 
   try {
     const dataBuffer = fs.readFileSync(pdfPath);
@@ -119,7 +131,7 @@ app.post('/upload', upload.single('pdf'), async (req, res) => {
 
     // Send the text to OpenAI API to generate questions
     const prompt = `Based on the following text, generate a JSON structure with various types of questions: multiple-choice, true/false, and checklist. The explanation should be related to the question-answer, explaning concisely what is the correct answer and why is it so. Here is an example of the JSON structure you should return: ${exampleJson}. Give me 10 questions, with any combination of the 4 types of questions, Here is the text:\n\n${summarizedText}`;
-  
+
     const response = await openai.chat.completions.create({
       messages: [{ role: "user", content: prompt }],
       model: "gpt-4o-mini",
@@ -140,8 +152,4 @@ app.post('/upload', upload.single('pdf'), async (req, res) => {
     // Cleanup
     fs.unlinkSync(pdfPath);
   }
-});
-
-app.listen(3001, () => {
-  console.log('Server running on http://localhost:3001');
 });
